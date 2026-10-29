@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #800000; /* สีเลือดหมู สีประจำวิทยาลัย */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #d4af37; /* สีเหลืองทอง */
+}
+
+.logo-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #4a0000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #4a0000;
+}
+
+/* Banner ส่วนหัว */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://nrtech.ac.th') no-repeat center center/cover;
+    color: white;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Section Styles */
+.main-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.main-content h3 {
+    color: #800000;
+    border-left: 5px solid #d4af37;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.dept-intro-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Sidebar Styles */
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.widget {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.widget h4 {
+    color: #800000;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.fb-button {
+    display: block;
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.fb-button:hover {
+    background-color: #145dbf;
+}
+
+.fb-sub {
+    background-color: #3b5998;
+}
+
+.fb-sub:hover {
+    background-color: #2d4373;
+}
+
+/* Department List Grid */
+.dept-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.dept-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.dept-list li::before {
+    content: "• ";
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Utilities Class */
+.mb-15 { margin-bottom: 15px; }
+.mt-30 { margin-top: 30px; }
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 14px;
+}
